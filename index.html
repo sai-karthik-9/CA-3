@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Food Suggestions</h1>
-        <p>A simple solution for your daily meal dilemmas</p>
-        <input type="text" id="searchInput" placeholder="Search for a category...">
-    </header>
-
-    <main>
-        <section id="randomMeal">
-            <!-- Random meal content will be dynamically added here -->
-        </section>
-
-        <section id="searchedMeals" class="hidden">
-            <h2>Search Results</h2>
-            <div id="searchedMealList"></div>
-        </section>
-    </main>
-
-    <!-- Modal for displaying ingredients -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Ingredients</h2>
-            <ul id="ingredientList"></ul>
-        </div>
+  <header>
+    <h1>Food ingredients Fetching using images</h1>
+    <p>Hey! Welcome to my webpage where you will get foods based on the category of meals. You can check the dishes and fetch the ingredients of a dish if you want to try something new.</p>
+    <input type="text" id="search" placeholder="Search for a category">
+  </header>
+  <main>
+    <section id="random-meal">
+      <h2>Random Meal</h2>
+      <div id="meal-container">
+        <img src="" alt="Random-Meal-Image">
+        <p id="meal-name"></p>
+      </div>
+    </section>
+    <section id="searched-meals" style="display: none;">
+      <h2>Search Results</h2>
+      <div id="searched-meals-container"></div>
+    </section>
+  </main>
+  <div id="modal" class="modal">
+    <div id="modal-content" class="modal-content">
     </div>
-
-    <script src="script.js"></script>
+  </div>
+  
+  <script src="app.js"></script>
 </body>
 </html>
