@@ -1,30 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-}
-
-header {
-    background-color: #ffcc80;
+  }
+  
+  header {
+    background-color: blueviolet;
     padding: 20px;
     text-align: center;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
-}
-
-section {
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 32px; 
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 80%; 
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+  }
+  
+  section {
     margin-bottom: 20px;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Styles for modal */
-.modal {
+  }
+  
+  #meal-container {
+    text-align: center;
+  }
+  
+  #meal-container img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #searched-meals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .meal {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .meal img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -33,23 +71,19 @@ section {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 600px;
-}
-
-.close {
-    float: right;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: #000;
-}
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px; 
+  }  
